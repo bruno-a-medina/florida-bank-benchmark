@@ -1,0 +1,47 @@
+# fetch_financials.yml
+#
+# Runs fetch_financials.py automatically on the 1st and 15th of every
+# month, since FDIC call report data only updates quarterly and this
+# gives us a max ~15 day lag between when new data posts and when
+# our pipeline picks it up.
+
+name: Fetch FDIC Financials
+
+on:
+  schedule:
+    # Cron syntax: minute hour day month day-of-week
+    # This runs at 6:00 AM UTC on the 1st and 15th of every month.
+    - cron: '0 6 1,15 * *'
+
+  # workflow_dispatch lets you manually trigger this from GitHub's
+  # Actions tab too, useful for testing without waiting for the schedule.
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out your repo's code so the workflow can access
+      # fetch_financials.py and requirements.txt.
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      # Installs Python on the GitHub-hosted runner.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Installs your dependencies from requirements.txt, same as
+      # running pip install locally.
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Runs the actual script. DATABASE_URL is pulled from GitHub
+      # Secrets (set up in step 3 below), not from a .env file,
+      # since .env never gets pushed to GitHub (it's gitignored).
+      - name: Run ingestion script
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python fetch_financials.py
