@@ -1,0 +1,5 @@
+relationship 804e827a-4e17-42e2-a8a3-8e341e0acce1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'public v_bank_financials'.date
+	toColumn: LocalDateTable_af29169e-0e5d-4993-bffb-4353969296da.Date
+

@@ -1,0 +1,389 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "447b5173ac9a6c75a04e",
+  "position": {
+    "x": 0,
+    "y": 179.64912280701756,
+    "z": 2000,
+    "height": 275.88972431077696,
+    "width": 962.406015037594,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "public v_bank_financials"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "date"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Quarter"
+                }
+              },
+              "queryRef": "public v_bank_financials.date.Variation.Date Hierarchy.Quarter",
+              "nativeQueryRef": "date Quarter",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "public v_bank_financials"
+                    }
+                  },
+                  "Property": "namefull"
+                }
+              },
+              "queryRef": "public v_bank_financials.namefull",
+              "nativeQueryRef": "namefull",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public v_bank_financials"
+                        }
+                      },
+                      "Property": "return_on_assets"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public v_bank_financials.return_on_assets)",
+              "nativeQueryRef": "return_on_assets",
+              "displayName": "return_on_assets",
+              "format": "0.00\"%\""
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public v_bank_financials"
+                        }
+                      },
+                      "Property": "efficiency_ratio"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public v_bank_financials.efficiency_ratio)",
+              "nativeQueryRef": "efficiency_ratio",
+              "displayName": "efficiency_ratio",
+              "format": "0.00\"%\""
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public v_bank_financials"
+                        }
+                      },
+                      "Property": "noncurrent_loan_rate"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public v_bank_financials.noncurrent_loan_rate)",
+              "nativeQueryRef": "noncurrent_loan_rate",
+              "displayName": "noncurrent_loan_rate"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "public v_bank_financials"
+                        }
+                      },
+                      "Property": "cet1_capital_ratio"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(public v_bank_financials.cet1_capital_ratio)",
+              "nativeQueryRef": "capital_ratio",
+              "displayName": "capital_ratio",
+              "format": "0.00\"%\""
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public v_bank_financials"
+                  }
+                },
+                "Property": "namefull"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "subTotals": [
+        {
+          "properties": {
+            "columnSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "rowSubtotals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'BoldHeaderFlashyRows'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "236ed88d9620c6ab00a3",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "public v_bank_financials"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "date"
+                  }
+                },
+                "Hierarchy": "Date Hierarchy"
+              }
+            },
+            "Level": "Quarter"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "acb55da46ecee234dd20",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public v_bank_financials"
+              }
+            },
+            "Property": "namefull"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "589a712af93c83935b17",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public v_bank_financials"
+                  }
+                },
+                "Property": "return_on_assets"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b65cd1b8fe771ae7b9ef",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public v_bank_financials"
+                  }
+                },
+                "Property": "efficiency_ratio"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6803905ef126daf0cf16",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public v_bank_financials"
+                  }
+                },
+                "Property": "cet1_capital_ratio"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "654abe787e344b7d4bad",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "public v_bank_financials"
+                  }
+                },
+                "Property": "noncurrent_loan_rate"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
