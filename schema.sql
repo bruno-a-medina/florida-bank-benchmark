@@ -1,15 +1,19 @@
 -- schema.sql
 --
--- Florida Bank Benchmark: schema and views for tracking quarterly
+-- Florida Bank Peer Benchmark: schema and views for tracking quarterly
 -- financial performance across 6 public Florida banks, sourced from
 -- the FDIC BankFind API.
+--
+-- This file describes the CURRENT structure. Do not run it in full against
+-- the live database (the CREATE TABLE statements would error because the
+-- tables already exist). Run individual statements as needed.
 
 -- =====================================================
 -- TABLES
 -- =====================================================
 
--- One row per bank. Static info that doesn't change quarter to
--- quarter, cert is the FDIC's permanent bank identifier.
+-- One row per bank. Static info that does not change quarter to quarter.
+-- cert is the FDIC's permanent bank identifier.
 CREATE TABLE banks (
     cert         INTEGER PRIMARY KEY,
     namehcr      TEXT,
@@ -17,9 +21,9 @@ CREATE TABLE banks (
     ticker       TEXT NOT NULL
 );
 
--- One row per bank per quarter. cert + repdte together form the
--- primary key, this is what makes reruns of the ingestion script
--- safe (ON CONFLICT DO UPDATE instead of duplicate rows).
+-- One row per bank per quarter. cert + repdte form the primary key, which
+-- makes reruns of the ingestion script safe (ON CONFLICT DO UPDATE
+-- instead of duplicate rows).
 CREATE TABLE quarterly_financials (
     cert         INTEGER NOT NULL REFERENCES banks(cert),
     repdte       DATE NOT NULL,
@@ -33,7 +37,12 @@ CREATE TABLE quarterly_financials (
     dep          NUMERIC,
 
     -- Credit risk
+    -- NOTE: ncnlsr stores the FDIC field NCLNLSR, the NONCURRENT LOAN RATIO
+    -- (loans 90+ days past due or not accruing interest), an early-warning
+    -- signal. The column name is a historical typo and does not mean
+    -- "net charge-off." The true net charge-off rate is ntlnlsr (FDIC NTLNLSR).
     ncnlsr       NUMERIC NOT NULL,
+    ntlnlsr      NUMERIC,
     elnatry      NUMERIC,
 
     -- Operating leverage / efficiency
@@ -70,8 +79,10 @@ VALUES
 --   - quarter-over-quarter (QoQ) and year-over-year (YoY) changes
 --   - peer group median for the same quarter, and each bank's
 --     variance against that median
--- All computed here in SQL so Power BI just reads clean,
--- ready-to-chart columns, no DAX required for these base views.
+-- All computed here in SQL so Power BI reads clean, ready-to-chart columns.
+--
+-- If column names change, run DROP VIEW IF EXISTS v_bank_financials first,
+-- because CREATE OR REPLACE VIEW cannot rename existing view columns.
 
 CREATE OR REPLACE VIEW v_bank_financials AS
 WITH base AS (
@@ -86,7 +97,8 @@ WITH base AS (
         qf.nimy AS net_interest_margin,
         qf.roa AS return_on_assets,
         qf.roe AS return_on_equity,
-        qf.ncnlsr AS charge_off_rate,
+        qf.ncnlsr AS noncurrent_loan_rate,
+        qf.ntlnlsr AS net_charge_off_rate,
         qf.elnatry AS provision_rate,
         qf.eeffr AS efficiency_ratio,
         qf.nonixay AS noninterest_expense_rate,
@@ -105,7 +117,8 @@ with_changes AS (
         net_interest_margin - LAG(net_interest_margin, 1) OVER (PARTITION BY cert ORDER BY date) AS nim_qoq,
         net_interest_margin - LAG(net_interest_margin, 4) OVER (PARTITION BY cert ORDER BY date) AS nim_yoy,
         efficiency_ratio - LAG(efficiency_ratio, 4) OVER (PARTITION BY cert ORDER BY date) AS efficiency_yoy,
-        charge_off_rate - LAG(charge_off_rate, 4) OVER (PARTITION BY cert ORDER BY date) AS charge_off_yoy,
+        noncurrent_loan_rate - LAG(noncurrent_loan_rate, 4) OVER (PARTITION BY cert ORDER BY date) AS noncurrent_yoy,
+        net_charge_off_rate - LAG(net_charge_off_rate, 4) OVER (PARTITION BY cert ORDER BY date) AS net_charge_off_yoy,
         total_assets - LAG(total_assets, 4) OVER (PARTITION BY cert ORDER BY date) AS asset_growth_yoy
     FROM base
 ),
@@ -115,7 +128,8 @@ peer_medians AS (
         PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY return_on_assets) AS peer_median_roa,
         PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY net_interest_margin) AS peer_median_nim,
         PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY efficiency_ratio) AS peer_median_efficiency,
-        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY charge_off_rate) AS peer_median_charge_off
+        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY noncurrent_loan_rate) AS peer_median_noncurrent,
+        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY net_charge_off_rate) AS peer_median_net_charge_off
     FROM base
     GROUP BY date
 )
@@ -124,11 +138,13 @@ SELECT
     pm.peer_median_roa,
     pm.peer_median_nim,
     pm.peer_median_efficiency,
-    pm.peer_median_charge_off,
+    pm.peer_median_noncurrent,
+    pm.peer_median_net_charge_off,
     wc.return_on_assets - pm.peer_median_roa AS roa_vs_peer,
     wc.net_interest_margin - pm.peer_median_nim AS nim_vs_peer,
     wc.efficiency_ratio - pm.peer_median_efficiency AS efficiency_vs_peer,
-    wc.charge_off_rate - pm.peer_median_charge_off AS charge_off_vs_peer
+    wc.noncurrent_loan_rate - pm.peer_median_noncurrent AS noncurrent_vs_peer,
+    wc.net_charge_off_rate - pm.peer_median_net_charge_off AS net_charge_off_vs_peer
 FROM with_changes wc
 JOIN peer_medians pm ON pm.date = wc.date
 ORDER BY wc.cert, wc.date;
