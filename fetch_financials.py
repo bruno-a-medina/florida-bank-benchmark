@@ -158,6 +158,62 @@ def upsert_financials(conn, records):
     cur.close()
 
 
+def check_completeness(conn):
+    """
+    Post-load sanity check. Raises an error (which turns the GitHub
+    Actions run red and triggers GitHub's failure email) if the data
+    looks incomplete, instead of letting a bad load pass silently.
+
+    Checks:
+      1. Every bank in `banks` has rows in quarterly_financials.
+      2. Every bank has the same number of quarters.
+      3. Every bank's latest quarter is the same date.
+      4. The key credit fields are not NULL in each bank's latest quarter.
+    """
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT b.ticker,
+               COUNT(qf.repdte)  AS quarters,
+               MAX(qf.repdte)    AS latest
+        FROM banks b
+        LEFT JOIN quarterly_financials qf ON qf.cert = b.cert
+        GROUP BY b.ticker
+        ORDER BY b.ticker;
+    """)
+    rows = cur.fetchall()
+
+    problems = []
+    quarter_counts = {r[1] for r in rows}
+    latest_dates = {r[2] for r in rows}
+
+    for ticker, quarters, latest in rows:
+        if quarters == 0:
+            problems.append(f"{ticker}: no rows loaded")
+    if len(quarter_counts) > 1:
+        problems.append(f"quarter counts differ by bank: {rows}")
+    if len(latest_dates) > 1:
+        problems.append(f"latest quarter differs by bank: {rows}")
+
+    # Key fields must be present in the latest quarter for every bank.
+    cur.execute("""
+        SELECT b.ticker
+        FROM quarterly_financials qf
+        JOIN banks b ON b.cert = qf.cert
+        WHERE qf.repdte = (SELECT MAX(repdte) FROM quarterly_financials)
+          AND (qf.roa IS NULL OR qf.ntlnlsr IS NULL OR qf.eeffr IS NULL
+               OR qf.idt1cer IS NULL);
+    """)
+    nulls = [r[0] for r in cur.fetchall()]
+    if nulls:
+        problems.append(f"NULL key fields in latest quarter for: {nulls}")
+
+    cur.close()
+
+    if problems:
+        raise RuntimeError("Completeness check failed: " + "; ".join(problems))
+    print("Completeness check passed.")
+
+
 def main():
     conn = psycopg2.connect(DATABASE_URL)
 
@@ -170,6 +226,8 @@ def main():
 
     upsert_financials(conn, records)
     print("Upsert complete.")
+
+    check_completeness(conn)
 
     conn.close()
 
