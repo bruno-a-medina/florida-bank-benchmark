@@ -1,100 +1,87 @@
 # Florida Bank Peer Benchmark
 
-**Question:** how does each Florida bank compare with its peers on profitability, efficiency, and credit quality, and is it improving or slipping?
+An automated pipeline and Power BI dashboard that compares six publicly traded Florida banks on profitability, efficiency, credit quality and capital, using FDIC call report data from 2019 through the latest available quarter.
 
-A pipeline pulls quarterly FDIC data for six publicly traded Florida banks, computes peer medians and year-over-year changes in SQL, and feeds a Power BI dashboard. It refreshes itself twice a month.
+![Executive Overview](docs/images/overview.png)
+<!-- TODO: add screenshots of all three pages in docs/images/ -->
 
-![Executive overview dashboard](docs/dashboard-overview.png)
+## The question
 
-## Results (Q2 2026)
+How do Florida's public banks compare on the things a bank analyst watches, and where do they differ from their peers? Regulators publish this data every quarter, but pulling it into a repeatable, comparable view usually means one-off spreadsheets. This project replaces that with a pipeline that refreshes itself.
 
-- **Profitability:** SouthState, U.S. Century and Capital City lead on ROA at 1.42% to 1.52%. Amerant, Seacoast and BankUnited trail near 0.9%.
-- **Credit:** Credit stress is concentrated at Amerant (2.49% noncurrent loans) and BankUnited (1.69%). The other four are at or below 0.66%.
-- **Capital:** All six banks hold CET1 above 12%, so the gaps are in asset quality and earnings, not capital.
-- **Trajectory:** Amerant's ROA fell below zero in late 2024 and has recovered only to about 0.9%. BankUnited runs the thinnest net interest margin, roughly 2.5% to 3%.
+**Peer set (6 banks):** SouthState (SSB), BankUnited (BKU), Seacoast (SBCF), Amerant (AMTB), Capital City (CCBG), U.S. Century (USCB). Every bank has a public ticker. City National Bank of Florida was excluded because it has no public ticker.
 
-## Peer set
-
-| Ticker | Bank |
-|---|---|
-| SSB | SouthState Bank |
-| BKU | BankUnited |
-| SBCF | Seacoast National Bank |
-| AMTB | Amerant Bank |
-| CCBG | Capital City Bank |
-| USCB | U.S. Century Bank |
-
-Data: quarterly call reports from Q1 2019 onward.
-
-## How it works
+## Architecture
 
 ```
-FDIC BankFind API  ->  fetch_financials.py  ->  Postgres (Neon)  ->  v_bank_financials view  ->  Power BI
-                                 ^
-                 GitHub Actions (1st and 15th of each month)
+FDIC BankFind API  ->  Python (requests, psycopg2)  ->  Neon Postgres  ->  SQL view  ->  Power BI
+                              ^
+                     GitHub Actions (1st and 15th of each month)
 ```
 
-1. **Ingest.** `fetch_financials.py` pulls 16 fields for each bank and pages through the FDIC API.
-2. **Store.** Rows are upserted on `(cert, repdte)`, so reruns update existing rows and never duplicate them.
-3. **Validate.** After each load, a completeness check confirms every bank has the same quarters and no key field is null. If the check fails, the GitHub Actions run turns red.
-4. **Transform.** The `v_bank_financials` view calculates quarter-over-quarter and year-over-year changes with `LAG()`, peer medians with `PERCENTILE_CONT`, and each bank's gap to the median.
-5. **Report.** The Power BI dashboard reads the view directly.
+| Piece | What it does | Why |
+|---|---|---|
+| `fetch_financials.py` | Pulls every quarter from 2019 onward for each bank in the `banks` table, with pagination, and upserts into Postgres | The bank list lives in the database, not hard-coded, so adding a bank is a one-row insert |
+| Neon Postgres | Stores `banks` and `quarterly_financials` | A database and a schedule mean no manual refresh |
+| `v_bank_financials` (SQL view) | Renames columns, adds quarter-over-quarter and year-over-year changes, and the peer median for each quarter | The math lives in SQL so Power BI only reads clean, chart-ready columns |
+| GitHub Actions | Runs the script twice a month | FDIC data posts quarterly with a lag of roughly seven weeks, so twice a month keeps the pipeline within about two weeks of new data |
+| Power BI | Three pages: Overview, Profitability Trend, Credit Risk | Decision-oriented views, not a data dump |
+
+### Design decisions
+
+- **Composite key `(cert, repdte)` with `INSERT ... ON CONFLICT DO UPDATE`.** Reruns update existing rows and never duplicate them, so the job is safe to run twice or after a failure.
+- **Median, not mean, for the peer benchmark.** With only six banks, one outlier (for example a bank with a loss quarter) would drag a mean. The median stays stable.
+- **Ratios stay as FDIC reports them** (1.42 means 1.42 percent). The dashboard converts them with explicit measures, so formats do not depend on manual number formatting.
+- **Post-load completeness check.** After every load the script confirms each bank has rows, all banks have the same quarter count and latest quarter, and the key credit fields are not null. If not, the job fails and GitHub emails me, instead of letting a bad load pass silently.
 
 ## Metrics
 
-| Group | Fields |
-|---|---|
-| Income | Total assets, net interest margin, ROA, ROE, interest expense, deposits |
-| Credit | Noncurrent loan ratio, net charge-off rate, provision rate |
-| Efficiency | Efficiency ratio, noninterest expense rate, noninterest income rate |
-| Funding and capital | Loans to deposits, CET1 capital ratio |
+| Group | Fields | Reading |
+|---|---|---|
+| Profitability | ROA, ROE, net interest margin (NIM) | Higher is better |
+| Efficiency | Efficiency ratio, noninterest expense and income rates | Lower efficiency ratio is better |
+| Credit quality | Noncurrent loan rate, net charge-off rate, provision rate | Noncurrent is the early warning, provision is expected loss, net charge-off is realized loss. Lower is better |
+| Capital | CET1 capital ratio | Higher means a larger loss cushion |
 
-Credit is shown as three separate signals, because they measure different things and move at different times:
-- **Noncurrent loan ratio:** loans 90+ days past due or not accruing interest. An early warning.
-- **Provision rate:** money set aside for expected losses.
-- **Net charge-off rate:** losses already realized.
+## What the data shows (Q2 2026)
 
-## Dashboard
+<!-- TODO: refresh these numbers if Q3 2026 data has loaded -->
 
-The Power BI project in [`powerbi/`](powerbi) has three pages.
+- **Two ROA tiers.** Capital City (1.52%), U.S. Century (1.49%) and SouthState (1.42%) sit well above the peer median of about 1.16%. Amerant (0.90%), Seacoast (0.88%) and BankUnited (0.87%) trail it.
+- **Size does not explain the gap.** The top tier contains both the largest bank in the set (SouthState, about $69B in assets) and the smallest (U.S. Century, about $3B).
+- **Credit quality separates the weaker tier.** Amerant (2.49%) and BankUnited (1.69%) carry the highest noncurrent loan rates, while U.S. Century is lowest at 0.09%.
+- **All six banks hold CET1 above 12%,** from 12.2% to 18.2%, so the differences are in earnings and credit, not capital.
+- **Seacoast is the open question.** Its ROA is weak, but its margin, credit and capital do not obviously explain it. A natural next step is an ROA bridge (spread, fee income, expenses, provisions).
 
-**Executive Overview:** peer share of assets, ROA against the peer median, and a quarter-and-year selector.
+**Caveats:** one quarter, six banks, and the analysis is descriptive, not causal.
 
-![Executive overview](docs/dashboard-overview.png)
+## What broke, and what I learned
 
-**Profit Trajectory:** ROA, efficiency ratio, and net interest margin for each bank from 2019 to 2026.
+- **A mislabeled credit field.** I first stored the FDIC noncurrent loan ratio (`NCLNLSR`) under a column I was treating as net charge-off. They are different measures: noncurrent loans are 90+ days past due or not accruing, while net charge-offs are realized losses. I caught it by comparing both fields for the same bank and quarter (Seacoast showed 0.66% noncurrent against 0.10% net charge-off). I added the true net charge-off field (`NTLNLSR`), relabeled the columns and rebuilt the view.
+- **A silent partial migration.** A multi-column `ALTER TABLE` applied only some columns, and new columns stayed NULL until the script was updated and rerun. This is why the completeness check now exists.
+- **A view that could not be replaced.** `CREATE OR REPLACE VIEW` cannot rename columns, so renames need `DROP VIEW` first.
+- **A dashboard aggregation trap.** Power BI sums by default, which turned snapshot charts into sums across quarters. The fix was explicit average measures and quarter slicers.
 
-![Profit trajectory](docs/dashboard-profit-trajectory.png)
+## Known limitations and next steps
 
-**Credit Risk:** profitability against noncurrent loans, CET1 by bank, and net charge-off and provision trends.
-
-![Credit risk](docs/dashboard-credit-risk.png)
-
-The project is saved in Power BI's `.pbip` format, so the model and report definitions are readable text.
+- `cost_of_deposits` in the view divides a rate by a dollar amount and should be replaced by the interest expense rate (cost of funds). Nothing on the dashboard uses it.
+- No alerting beyond GitHub's failed-run email.
+- Planned: a forecasting layer in Python (trailing eight quarters, four-quarter horizon, stored in its own table), reserve coverage, and a valuation view (price to tangible book against ROTCE).
 
 ## Run it yourself
 
-1. Create a Postgres database. Run the statements in `schema.sql` one at a time. The file describes the current structure, so running it in full against an existing database will fail on the `CREATE TABLE` lines.
-2. Install dependencies and load the data:
-   ```bash
-   pip install -r requirements.txt
-   echo "DATABASE_URL=postgresql://user:password@host/dbname" > .env
-   python fetch_financials.py
-   ```
-3. To use the dashboard, open `powerbi/Banking-dashboard-Cl1.pbip` in Power BI Desktop and point the data source at your database. The committed file points at the author's database, so this step is required.
+```bash
+git clone <this repo>
+cd florida-bank-benchmark
+python -m venv venv && source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env    # then set DATABASE_URL
+psql "$DATABASE_URL" -f schema.sql
+python fetch_financials.py
+```
 
-## Limitations
+Never commit `.env`. In GitHub Actions the connection string is stored as the `DATABASE_URL` repository secret.
 
-- **Small peer set.** A median of six banks moves a lot after one unusual quarter, and the bank being compared is part of its own median.
-- **Lagged data.** Call reports post weeks after quarter end, so the newest numbers are always behind.
-- **Basic alerting.** A failed run sends GitHub's standard failure email and nothing else.
+## Data source
 
-## Next steps
-
-- Run the missing-quarter check from `sql/exploration.sql` automatically after each load, so a gap in the middle of a bank's history fails the run
-- Add a market valuation layer from SEC filings
-- Publish the dashboard so it can be viewed without Power BI Desktop
-
-## Tech
-
-Python (`requests`, `psycopg2`, `python-dotenv`), PostgreSQL on Neon, SQL (CTEs, window functions, `PERCENTILE_CONT`), Power BI, GitHub Actions.
+FDIC BankFind Suite, financials endpoint: https://banks.data.fdic.gov/docs/
