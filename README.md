@@ -91,7 +91,7 @@ The project is saved in Power BI's `.pbip` format, so the model and report defin
 
 ## Next steps
 
-- Flag a missing quarter in the middle of a bank's history, not only at the edges
+- Run the missing-quarter check from `sql/exploration.sql` automatically after each load, so a gap in the middle of a bank's history fails the run
 - Add a market valuation layer from SEC filings
 - Publish the dashboard so it can be viewed without Power BI Desktop
 
