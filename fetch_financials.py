@@ -6,10 +6,14 @@ in the `banks` table and upserts it into `quarterly_financials` in Neon.
 
 Fields pulled:
   - Income engine: ASSET, NIMY, ROA, ROE, INTEXPY, DEP
+  - Quarterly income (single-quarter figures): NIMYQ, ROAQ, ROEQ
+    FDIC's plain ROA, NIMY and ROE are year-to-date, so they reset each
+    January and drift within the year. The Q versions are the true
+    single-quarter figures and are what the dashboard uses.
   - Credit risk: NCLNLSR (noncurrent loans / loans, an early-warning
     signal), NTLNLSR (net charge-offs / loans, realized losses),
     ELNATRY (provision rate, expected losses)
-  - Operating leverage: EEFFR, NONIXAY, NONIIAY
+  - Operating leverage: EEFFR, NONIXAY, NONIIAY (year-to-date)
   - Funding/capital: LNLSDEPR, IDT1CER
 
 Run manually: python fetch_financials.py
@@ -55,13 +59,12 @@ def fetch_financials(cert_filter):
     while True:
         params = {
             "filters": full_filter,
-            # NEW: NTLNLSR added right after NCLNLSR. NTLNLSR is the
-            # true net charge-off rate. NCLNLSR is the noncurrent loan
-            # ratio (loans 90+ days past due or not accruing interest).
+            # NEW: ROAQ, NIMYQ and ROEQ are the single-quarter figures.
+            # The plain ROA, NIMY and ROE are year-to-date.
             "fields": (
                 "CERT,REPDTE,ASSET,NIMY,ROA,ROE,INTEXPY,DEP,"
                 "NCLNLSR,NTLNLSR,ELNATRY,EEFFR,NONIXAY,NONIIAY,"
-                "LNLSDEPR,IDT1CER"
+                "LNLSDEPR,IDT1CER,ROAQ,NIMYQ,ROEQ"
             ),
             "sort_by": "REPDTE",
             "sort_order": "DESC",
@@ -100,18 +103,16 @@ def upsert_financials(conn, records):
     """Insert each record, or update it if (cert, repdte) already exists."""
     cur = conn.cursor()
 
-    # NEW: ntlnlsr added to the column list, one more %s (16 total),
-    # and one more line in DO UPDATE. The column order in INSERT must
-    # match the order of the values in the tuple below. Note that the
-    # ncnlsr column holds NCLNLSR (the noncurrent loan ratio).
+    # NEW: three columns added at the end (roaq, nimyq, roeq), 19 total.
+    # Column order in INSERT must match the order of the values tuple.
     upsert_sql = """
         INSERT INTO quarterly_financials (
             cert, repdte, asset, nimy, roa, roe, intexpy, dep,
             ncnlsr, ntlnlsr, elnatry, eeffr, nonixay, noniiay,
-            lnlsdepr, idt1cer
+            lnlsdepr, idt1cer, roaq, nimyq, roeq
         )
         VALUES (%s, %s, %s, %s, %s, %s, %s, %s,
-                %s, %s, %s, %s, %s, %s, %s, %s)
+                %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
         ON CONFLICT (cert, repdte)
         DO UPDATE SET
             asset    = EXCLUDED.asset,
@@ -127,7 +128,10 @@ def upsert_financials(conn, records):
             nonixay  = EXCLUDED.nonixay,
             noniiay  = EXCLUDED.noniiay,
             lnlsdepr = EXCLUDED.lnlsdepr,
-            idt1cer  = EXCLUDED.idt1cer;
+            idt1cer  = EXCLUDED.idt1cer,
+            roaq     = EXCLUDED.roaq,
+            nimyq    = EXCLUDED.nimyq,
+            roeq     = EXCLUDED.roeq;
     """
 
     for item in records:
@@ -144,13 +148,16 @@ def upsert_financials(conn, records):
                 data.get("INTEXPY"),
                 data.get("DEP"),
                 data["NCLNLSR"],
-                data.get("NTLNLSR"),  # NEW
+                data.get("NTLNLSR"),
                 data.get("ELNATRY"),
                 data.get("EEFFR"),
                 data.get("NONIXAY"),
                 data.get("NONIIAY"),
                 data.get("LNLSDEPR"),
                 data.get("IDT1CER"),
+                data.get("ROAQ"),   # NEW
+                data.get("NIMYQ"),  # NEW
+                data.get("ROEQ"),   # NEW
             ),
         )
 
@@ -168,13 +175,14 @@ def check_completeness(conn):
       1. Every bank in `banks` has rows in quarterly_financials.
       2. Every bank has the same number of quarters.
       3. Every bank's latest quarter is the same date.
-      4. The key credit fields are not NULL in each bank's latest quarter.
+      4. The key fields are not NULL in the latest quarter, including
+         the new quarterly columns.
     """
     cur = conn.cursor()
     cur.execute("""
         SELECT b.ticker,
-               COUNT(qf.repdte)  AS quarters,
-               MAX(qf.repdte)    AS latest
+               COUNT(qf.repdte) AS quarters,
+               MAX(qf.repdte)   AS latest
         FROM banks b
         LEFT JOIN quarterly_financials qf ON qf.cert = b.cert
         GROUP BY b.ticker
@@ -200,7 +208,8 @@ def check_completeness(conn):
         FROM quarterly_financials qf
         JOIN banks b ON b.cert = qf.cert
         WHERE qf.repdte = (SELECT MAX(repdte) FROM quarterly_financials)
-          AND (qf.roa IS NULL OR qf.ntlnlsr IS NULL OR qf.eeffr IS NULL
+          AND (qf.roaq IS NULL OR qf.nimyq IS NULL OR qf.roeq IS NULL
+               OR qf.ntlnlsr IS NULL OR qf.eeffr IS NULL
                OR qf.idt1cer IS NULL);
     """)
     nulls = [r[0] for r in cur.fetchall()]
