@@ -651,6 +651,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.748
 			          }
+			        },
+			        {
+			          "QTR Net Interest Margin %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },

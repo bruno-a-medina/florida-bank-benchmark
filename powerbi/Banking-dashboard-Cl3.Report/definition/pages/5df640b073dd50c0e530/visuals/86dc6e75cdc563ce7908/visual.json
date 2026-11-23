@@ -64,7 +64,8 @@
                 }
               },
               "queryRef": "public v_bank_financials.Net Interest Margin %",
-              "nativeQueryRef": "Sum of net_interest_margin"
+              "nativeQueryRef": "QTR Net Interest Margin %",
+              "displayName": "QTR Net Interest Margin %"
             }
           ]
         }
@@ -210,7 +211,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Net Interest Margin'"
+                  "Value": "'QTR Net Interest Margin %'"
                 }
               }
             }
@@ -232,5 +233,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "354a572ab84a3313b5a9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public v_bank_financials"
+              }
+            },
+            "Property": "date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9f7c830541a48efae8b0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public v_bank_financials"
+              }
+            },
+            "Property": "ticker"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b32d43bfd40b09618b80",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "public v_bank_financials"
+              }
+            },
+            "Property": "Net Interest Margin %"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
