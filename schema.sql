@@ -7,6 +7,11 @@
 -- This file describes the CURRENT structure. Do not run it in full against
 -- the live database (the CREATE TABLE statements would error because the
 -- tables already exist). Run individual statements as needed.
+--
+-- Income ratios: ROA, NIM and ROE use the single-quarter FDIC fields
+-- (ROAQ, NIMYQ, ROEQ). The plain FDIC ROA, NIMY and ROE are year-to-date
+-- and are kept in the table for reference only.
+-- Efficiency ratio and cost of funds are year-to-date in FDIC's data.
 
 -- =====================================================
 -- TABLES
@@ -30,11 +35,16 @@ CREATE TABLE quarterly_financials (
 
     -- Income engine
     asset        NUMERIC NOT NULL,
-    nimy         NUMERIC NOT NULL,
-    roa          NUMERIC,
-    roe          NUMERIC,
-    intexpy      NUMERIC,
+    nimy         NUMERIC NOT NULL,   -- year-to-date NIM (reference)
+    roa          NUMERIC,            -- year-to-date ROA (reference)
+    roe          NUMERIC,            -- year-to-date ROE (reference)
+    intexpy      NUMERIC,            -- cost of funds, year-to-date
     dep          NUMERIC,
+
+    -- Single-quarter income (used by the dashboard)
+    roaq         NUMERIC,            -- quarterly ROA
+    nimyq        NUMERIC,            -- quarterly net interest margin
+    roeq         NUMERIC,            -- quarterly ROE
 
     -- Credit risk
     -- NOTE: ncnlsr stores the FDIC field NCLNLSR, the NONCURRENT LOAN RATIO
@@ -46,7 +56,7 @@ CREATE TABLE quarterly_financials (
     elnatry      NUMERIC,
 
     -- Operating leverage / efficiency
-    eeffr        NUMERIC,
+    eeffr        NUMERIC,            -- efficiency ratio, year-to-date
     nonixay      NUMERIC,
     noniiay      NUMERIC,
 
@@ -76,15 +86,18 @@ VALUES
 --
 -- One row per bank per quarter, joined to bank info, with:
 --   - clear, Power BI-friendly column names
+--   - quarterly ROA, NIM and ROE (single-quarter FDIC fields)
 --   - quarter-over-quarter (QoQ) and year-over-year (YoY) changes
 --   - peer group median for the same quarter, and each bank's
 --     variance against that median
 -- All computed here in SQL so Power BI reads clean, ready-to-chart columns.
 --
--- If column names change, run DROP VIEW IF EXISTS v_bank_financials first,
--- because CREATE OR REPLACE VIEW cannot rename existing view columns.
+-- Columns changed in this version, so run DROP VIEW IF EXISTS first:
+-- CREATE OR REPLACE VIEW cannot rename or remove existing view columns.
 
-CREATE OR REPLACE VIEW v_bank_financials AS
+DROP VIEW IF EXISTS v_bank_financials;
+
+CREATE VIEW v_bank_financials AS
 WITH base AS (
     SELECT
         qf.cert,
@@ -94,18 +107,18 @@ WITH base AS (
         EXTRACT(YEAR FROM qf.repdte)::INTEGER AS year,
         EXTRACT(QUARTER FROM qf.repdte)::INTEGER AS quarter,
         qf.asset AS total_assets,
-        qf.nimy AS net_interest_margin,
-        qf.roa AS return_on_assets,
-        qf.roe AS return_on_equity,
+        qf.nimyq AS net_interest_margin,        -- quarterly NIM
+        qf.roaq AS return_on_assets,            -- quarterly ROA
+        qf.roeq AS return_on_equity,            -- quarterly ROE
         qf.ncnlsr AS noncurrent_loan_rate,
         qf.ntlnlsr AS net_charge_off_rate,
         qf.elnatry AS provision_rate,
-        qf.eeffr AS efficiency_ratio,
+        qf.eeffr AS efficiency_ratio,           -- year-to-date
         qf.nonixay AS noninterest_expense_rate,
         qf.noniiay AS noninterest_income_rate,
         qf.lnlsdepr AS loans_to_deposits,
         qf.idt1cer AS cet1_capital_ratio,
-        qf.intexpy / NULLIF(qf.dep, 0) AS cost_of_deposits
+        qf.intexpy AS cost_of_funds             -- year-to-date
     FROM quarterly_financials qf
     JOIN banks b ON b.cert = qf.cert
 ),
