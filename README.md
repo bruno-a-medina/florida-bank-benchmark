@@ -2,9 +2,11 @@
 
 An automated pipeline and Power BI dashboard that compares six publicly traded Florida banks on profitability, efficiency, credit quality and capital, using FDIC call report data from 2019 through Q2 2026.
 
-<!-- Add screenshots to docs/images/ (overview.png, profitability.png, credit-risk.png), then uncomment:
 ![Executive Overview](docs/images/overview.png)
--->
+
+![Profitability Trajectory](docs/images/profitability.png)
+
+![Credit Risk](docs/images/credit-risk.png)
 
 ## The question
 
