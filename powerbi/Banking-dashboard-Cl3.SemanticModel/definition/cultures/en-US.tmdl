@@ -1,0 +1,6366 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "public_v_bank_financial.roa_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "ROA %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "roa %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "roa pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ROA by Bank": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.ROA_YoY_change_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "ROA YoY Change %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ROA YoY change %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa yoy change percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "roa yoy change pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "ROA YoY": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.efficiency_ratio_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Efficiency Ratio %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "efficiency ratio %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "efficiency ratio percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "efficiency ratio pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "YTD Efficiency ratio %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noncurrent_loan_rate_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Noncurrent Loan Rate %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noncurrent loan rate %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noncurrent loan rate percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "noncurrent loan rate pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "Noncurrent %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.CET1_capital_ratio_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "CET1 Capital Ratio %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CET1 capital ratio %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cet1 capital ratio percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "cet1 capital ratio pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "CET1 %": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "CET1 Capital Ratio by Bank": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.ROA_vs_peer_median_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "ROA vs Peer Median %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ROA vs peer median %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa vs peer median percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "roa vs peer median pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "Roa_vs_Peers": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "public v_bank_financial": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.total_assets_billions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Total Assets (Billions)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total assets (billions)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total assets": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "aggregate asset (billion)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall asset (billion)": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Assets ($B)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_interest_margin_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Net Interest Margin %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net interest margin %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net interest margin percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "net interest margin pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_chargeoff_rate_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Net Charge-Off Rate %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net charge-off rate %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net charge off rate %": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net charge off rate percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "net charge off rate pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "net custody off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net responsibility off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net duty off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net care off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net control off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net trust off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net burden off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net safekeeping off rate %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.provision_rate_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Provision Rate %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provision rate %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "provision rate percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "provision rate pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_ROA_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Peer Median ROA %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median ROA %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer median roa percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "peer median roa pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_noncurrent_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Peer Median Noncurrent %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median noncurrent %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer median noncurrent percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "peer median noncurrent pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.cert": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "cert"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cert": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "certainty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "inevitability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "hit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "star": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.namefull": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "namefull"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "namefull": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.ticker": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "ticker"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ticker": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "public_v_bank_financial.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.total_asset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "total_assets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total asset": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_assets": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "asset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total strength": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total skill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total talent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total ability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total qualification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total endowment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "strength": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "skill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_interest_margin": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "net_interest_margin"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net interest margin": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net_interest_margin": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "margin": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "interest margin": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net interest boundary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "net interest perimeter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "net interest periphery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "interest boundary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest perimeter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest periphery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net interest border": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net interest brim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net interest sideline": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "net interest edge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.return_on_assets": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "return_on_assets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "return on assets": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "return on asset": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "return_on_assets": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "return": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "reappearance on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "reoccurrence on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "homecoming on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "arrival on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "reappearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reoccurrence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "homecoming": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "arrival": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "revenue on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "profit on asset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.return_on_equity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "return_on_equity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "return on equity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "return_on_equity": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "return": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "reappearance on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "reoccurrence on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "homecoming on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "arrival on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "reappearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reoccurrence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "homecoming": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "arrival": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "revenue on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "profit on equity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noncurrent_loan_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "noncurrent_loan_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noncurrent loan rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noncurrent_loan_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "noncurrent loan degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noncurrent loan frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noncurrent loan percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noncurrent loan ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noncurrent loan quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "loan degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_charge_off_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "net_charge_off_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net charge off rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net_charge_off_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "charge": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net charge": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net custody off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net responsibility off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net duty off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net custody": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net responsibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net duty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "net care off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net control off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net trust off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net burden off rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.provision_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "provision_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "provision rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "provision_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "provision degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "provision frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "provision percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "provision ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "provision quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "provision amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "provision proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.efficiency_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "efficiency_ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "efficiency ratio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "efficiency_ratio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "efficiency relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "efficiency percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "efficiency quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "efficiency relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "efficiency proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "efficiency share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "efficiency fraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noninterest_expense_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "noninterest_expense_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noninterest expense rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noninterest_expense_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "expense rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "noninterest expense degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest expense frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest expense percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest expense ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest expense quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "expense degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "expense quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noninterest_income_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "noninterest_income_rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noninterest income rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noninterest_income_rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "income rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "noninterest income degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest income frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest income percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest income ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "noninterest income quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "income degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "income frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "income percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "income ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "income quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.loan_to_deposits": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "loans_to_deposits"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan to deposits": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "loan to deposit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "loans_to_deposits": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "advance to deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "credit to deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "finance to deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "mortgage to deposit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "credit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mortgage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.cet_1_capital_ratio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "cet1_capital_ratio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cet 1 capital ratio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cet1_capital_ratio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cet 1 capital relation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cet 1 capital percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cet 1 capital quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cet 1 capital relationship": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cet 1 capital proportion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cet 1 capital share": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cet 1 capital fraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cet 1 capital part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.cost_of_funds": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "cost_of_funds"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cost of funds": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cost of fund": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "cost_of_funds": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "cost": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "charge of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "rate of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "fee of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "expenditure of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "budget of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "amount of fund": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.roa_qoq": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "roa_qoq"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "roa qoq": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa_qoq": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.roa_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "roa_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "roa yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.nim_qoq": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "nim_qoq"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nim qoq": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nim_qoq": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.nim_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "nim_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nim yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nim_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.efficiency_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "efficiency_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "efficiency yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "efficiency_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noncurrent_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "noncurrent_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noncurrent yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noncurrent_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_charge_off_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "net_charge_off_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net charge off yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net_charge_off_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "net custody off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net responsibility off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net duty off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "net care off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net control off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net trust off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net burden off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net safekeeping off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net concern off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "net accusation off yoy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.asset_growth_yoy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "asset_growth_yoy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "asset growth yoy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "asset_growth_yoy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_roa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "peer_median_roa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median roa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer_median_roa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_nim": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "peer_median_nim"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median nim": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer_median_nim": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_efficiency": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "peer_median_efficiency"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median efficiency": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer_median_efficiency": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "efficiency": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "median efficiency": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "peer median competence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peer median efficacy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peer median effectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peer median productivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peer median proficiency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peer median adeptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "median competence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "median efficacy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "median effectiveness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "median productivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_noncurrent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "peer_median_noncurrent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median noncurrent": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer_median_noncurrent": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "peer norm noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "peer nucleus noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "peer midpoint noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "peer middle noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer center noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer medium noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer mean noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer average noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer par noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "peer standard noncurrent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.peer_median_net_charge_off": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "peer_median_net_charge_off"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peer median net charge off": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "peer_median_net_charge_off": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "peer median net custody off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "peer median net responsibility off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "peer median net duty off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "peer median net care off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net control off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net trust off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net burden off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net safekeeping off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net concern off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "peer median net accusation off": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.roa_vs_peer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "roa_vs_peer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "roa vs peer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "roa_vs_peer": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.nim_vs_peer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "nim_vs_peer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nim vs peer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nim_vs_peer": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.efficiency_vs_peer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "efficiency_vs_peer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "efficiency vs peer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "efficiency_vs_peer": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noncurrent_vs_peer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "noncurrent_vs_peer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noncurrent vs peer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "noncurrent_vs_peer": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.net_charge_off_vs_peer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "net_charge_off_vs_peer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net charge off vs peer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net_charge_off_vs_peer": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "net custody off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net responsibility off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net duty off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "net care off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net control off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net trust off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net burden off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net safekeeping off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net concern off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "net accusation off vs peer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.period_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Period Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "period label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "period sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "period decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "period name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.ROA_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "ROA Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ROA title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "roa designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "roa name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "roa award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "roa call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "roa heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "roa label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.CET1_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "CET1 Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CET1 title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cet1 designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "cet1 name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "cet1 award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "cet1 call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "cet1 heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "cet1 label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.noncurrent_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Noncurrent Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "noncurrent title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "noncurrent designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "noncurrent name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "noncurrent award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "noncurrent call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "noncurrent heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "noncurrent label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.YoY_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "YoY Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "YoY title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yoy designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yoy name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "yoy label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial.assets_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "public v_bank_financials",
+			          "ConceptualProperty": "Assets Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "assets title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "asset designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "asset name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "asset award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "asset call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "asset heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "asset label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "public_v_bank_financial_date_date_hierarchy_has_public_v_bank_financial_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.date_hierarchy"
+			          }
+			        },
+			        "public_v_bank_financial.date.month": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_date_date_hierarchy_has_public_v_bank_financial_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.date_hierarchy"
+			          }
+			        },
+			        "public_v_bank_financial.date.quarter": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_date_date_hierarchy_has_public_v_bank_financial_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.date_hierarchy"
+			          }
+			        },
+			        "public_v_bank_financial.date.year": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial.date": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date"
+			          }
+			        },
+			        "public_v_bank_financial.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial.date"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_assets_title": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.assets_title": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.assets_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.assets_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_assets_title"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_YoY_title": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.YoY_title": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.YoY_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.YoY_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_YoY_title"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noncurrent_title": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noncurrent_title": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noncurrent_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noncurrent_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noncurrent_title"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_CET1_title": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.CET1_title": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.CET1_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.CET1_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_CET1_title"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_ROA_title": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.ROA_title": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.ROA_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.ROA_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_ROA_title"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_period_label": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.period_label": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.period_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.period_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_period_label"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_charge_off_vs_peer": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_charge_off_vs_peer": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_charge_off_vs_peer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_charge_off_vs_peer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_charge_off_vs_peer"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noncurrent_vs_peer": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noncurrent_vs_peer": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noncurrent_vs_peer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noncurrent_vs_peer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noncurrent_vs_peers"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_efficiency_vs_peer": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.efficiency_vs_peer": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.efficiency_vs_peer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.efficiency_vs_peer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_efficiency_vs_peers"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_nim_vs_peer": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.nim_vs_peer": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.nim_vs_peer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.nim_vs_peer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_nim_vs_peers"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_roa_vs_peer": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.roa_vs_peer": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.roa_vs_peer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.roa_vs_peer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_roa_vs_peers"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_net_charge_off": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_net_charge_off": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_net_charge_off"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_net_charge_off"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_net_charge_off"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_noncurrent": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_noncurrent": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_noncurrent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_noncurrent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_noncurrent"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_efficiency": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_efficiency": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_efficiency"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_efficiency"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_efficiencies"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_nim": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_nim": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_nim"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_nim"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_nims"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_roa": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_roa": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_roa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_roa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_roas"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_asset_growth_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.asset_growth_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.asset_growth_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.asset_growth_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_asset_growth_yoys"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_charge_off_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_charge_off_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_charge_off_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_charge_off_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_charge_off_yoy"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noncurrent_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noncurrent_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noncurrent_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noncurrent_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noncurrent_yoys"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_efficiency_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.efficiency_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.efficiency_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.efficiency_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_efficiency_yoys"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_nim_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.nim_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.nim_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.nim_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_nim_yoys"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_nim_qoq": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.nim_qoq": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.nim_qoq"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.nim_qoq"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_nim_qoqs"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_roa_yoy": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.roa_yoy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.roa_yoy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.roa_yoy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_roa_yoys"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_roa_qoq": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.roa_qoq": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.roa_qoq"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.roa_qoq"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_roa_qoqs"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_cost_of_funds": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.cost_of_funds": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.cost_of_funds"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.cost_of_funds"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_cost_of_funds"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "public_v_bank_financial.cost_of_funds"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cost_of_funds_indicates_how_expensive_public_v_bank_financials_are"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_cet_1_capital_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.cet_1_capital_ratio": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.cet_1_capital_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.cet_1_capital_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_cet_1_capital_ratios"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_loan_to_deposits": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.loan_to_deposits": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.loan_to_deposits"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.loan_to_deposits"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_loan_to_deposits"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noninterest_income_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noninterest_income_rate": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noninterest_income_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noninterest_income_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noninterest_income_rates"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noninterest_expense_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noninterest_expense_rate": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noninterest_expense_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noninterest_expense_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noninterest_expense_rates"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_efficiency_ratio": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.efficiency_ratio": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.efficiency_ratio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.efficiency_ratio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_efficiency_ratios"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_provision_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.provision_rate": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.provision_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.provision_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_provision_rates"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_charge_off_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_charge_off_rate": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_charge_off_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_charge_off_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_charge_off_rate"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noncurrent_loan_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noncurrent_loan_rate": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noncurrent_loan_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noncurrent_loan_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noncurrent_loan_rates"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_return_on_equity": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.return_on_equity": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.return_on_equity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.return_on_equity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_return_on_equity"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_return_on_assets": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.return_on_assets": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.return_on_assets"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.return_on_assets"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_return_on_assets"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_interest_margin": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_interest_margin": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_interest_margin"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_interest_margin"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_interest_margins"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_total_asset": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.total_asset": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.total_asset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.total_asset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_total_assets"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.quarter": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_quarters"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.year": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_years"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.date": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_dates"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_ticker": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.ticker": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.ticker"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.ticker"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_tickers"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_namefull": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.namefull": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.namefull"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.namefull"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_namefulls"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_cert": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.cert": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.cert"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.cert"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_certs"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_noncurrent_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_noncurrent_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_noncurrent_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_noncurrent_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_noncurrent_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_peer_median_ROA_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.peer_median_ROA_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.peer_median_ROA_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.peer_median_ROA_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_peer_median_ROA_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_provision_rate_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.provision_rate_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.provision_rate_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.provision_rate_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_provision_rate_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_chargeoff_rate_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_chargeoff_rate_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_chargeoff_rate_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_chargeoff_rate_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_chargeoff_rate_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_net_interest_margin_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.net_interest_margin_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.net_interest_margin_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.net_interest_margin_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_net_interest_margin_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_total_assets_billions": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.total_assets_billions": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.total_assets_billions"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.total_assets_billions"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_total_assets_billions"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_ROA_vs_peer_median_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.ROA_vs_peer_median_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.ROA_vs_peer_median_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.ROA_vs_peer_median_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_ROA_vs_peer_median_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_CET1_capital_ratio_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.CET1_capital_ratio_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.CET1_capital_ratio_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.CET1_capital_ratio_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_CET1_capital_ratio_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_noncurrent_loan_rate_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.noncurrent_loan_rate_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.noncurrent_loan_rate_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.noncurrent_loan_rate_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_noncurrent_loan_rate_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_efficiency_ratio_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.efficiency_ratio_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.efficiency_ratio_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.efficiency_ratio_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_efficiency_ratio_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_ROA_YoY_change_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.ROA_YoY_change_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.ROA_YoY_change_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.ROA_YoY_change_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_ROA_YoY_change_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_has_roa_": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial"
+			          }
+			        },
+			        "public_v_bank_financial.roa_": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.roa_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.roa_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "public_v_bank_financials_have_roa_"
+			        }
+			      ]
+			    },
+			    "public_v_bank_financial_date_date_hierarchy_has_public_v_bank_financial_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "public v_bank_financials"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "public_v_bank_financial.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.date_hierarchy"
+			          }
+			        },
+			        "public_v_bank_financial.date.day": {
+			          "Target": {
+			            "Entity": "public_v_bank_financial.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "public_v_bank_financial.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "public_v_bank_financial.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

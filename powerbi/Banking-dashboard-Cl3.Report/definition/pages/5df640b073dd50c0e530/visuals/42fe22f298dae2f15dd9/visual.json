@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "42fe22f298dae2f15dd9",
+  "position": {
+    "x": 77.546012269938643,
+    "y": 157.05521472392638,
+    "z": 7000,
+    "height": 91.288343558282207,
+    "width": 755.82822085889563,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Key Findings:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": " Amerant's quarterly ROA fell to about -1.8% in Q3 2024, after a dip to -0.6% in Q4 2023, and has since recovered to about 0.9%. BankUnited runs the thinnest margin, roughly 2.5% to 3%. U.S. Century has the lowest year-to-date efficiency ratio, near 46%.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

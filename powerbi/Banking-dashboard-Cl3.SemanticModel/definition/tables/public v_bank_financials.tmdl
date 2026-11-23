@@ -1,0 +1,454 @@
+table 'public v_bank_financials'
+	lineageTag: aed4664c-6673-42bf-8a6b-7a02fed5168d
+
+	measure 'Total Assets (Billions)' = SUM('public v_bank_financials'[total_assets]) / 1000000
+		formatString: 0.0"B"
+		lineageTag: 969d273c-b5e9-48d0-97f2-974f23f32905
+
+	measure 'ROA %' = AVERAGE('public v_bank_financials'[return_on_assets]) / 100
+		formatString: 0.00%
+		lineageTag: d789e37a-8540-49cf-b30d-374ddaa87596
+
+	measure 'ROA YoY Change %' = AVERAGE('public v_bank_financials'[roa_yoy]) / 100
+		formatString: +0.00%;-0.00%;0.00%
+		lineageTag: 6b5b5c48-2924-49d3-ad40-8516eda1f8f8
+
+	measure 'ROA vs Peer Median %' = AVERAGE('public v_bank_financials'[roa_vs_peer]) / 100
+		formatString: +0.00%;-0.00%;0.00%
+		lineageTag: 7aeeac47-b499-43c8-859e-6148e749bc31
+
+	measure 'Net Interest Margin %' = AVERAGE('public v_bank_financials'[net_interest_margin]) / 100
+		formatString: 0.00%
+		lineageTag: 49f76faf-5b3c-44e4-a058-9679ddb4b4ef
+
+	measure 'Efficiency Ratio %' = AVERAGE('public v_bank_financials'[efficiency_ratio]) / 100
+		formatString: 0.0%
+		lineageTag: 800ae694-275f-4c11-b30d-c4bf8d17f526
+
+	measure 'Noncurrent Loan Rate %' = AVERAGE('public v_bank_financials'[noncurrent_loan_rate]) / 100
+		formatString: 0.00%
+		lineageTag: cd2b7230-8587-4df1-a1d6-c28eb72db3ab
+
+	measure 'Net Charge-Off Rate %' = AVERAGE('public v_bank_financials'[net_charge_off_rate]) / 100
+		formatString: 0.00%
+		lineageTag: 7a399e02-79e9-479f-8ac6-fe3e2dd4b68e
+
+	measure 'Provision Rate %' = AVERAGE('public v_bank_financials'[provision_rate]) / 100
+		formatString: 0.00%
+		lineageTag: cc40b22c-9181-4e5c-9ec9-4be7e17b0c8f
+
+	measure 'CET1 Capital Ratio %' = AVERAGE('public v_bank_financials'[cet1_capital_ratio]) / 100
+		formatString: 0.0%
+		lineageTag: dae44a8d-d60f-4391-aca3-0833bfbcd389
+
+	measure 'Peer Median ROA %' = AVERAGE('public v_bank_financials'[peer_median_roa]) / 100
+		formatString: 0.00%
+		lineageTag: 1561f531-3654-43e3-bdfb-976462143a99
+
+	measure 'Peer Median Noncurrent %' = AVERAGE('public v_bank_financials'[peer_median_noncurrent]) / 100
+		formatString: 0.00%
+		lineageTag: bfb1a80a-68d7-4359-8fa5-a4bc6c649433
+
+	measure 'Period Label' =
+			
+			VAR d = MAX('public v_bank_financials'[date])
+			RETURN "Q" & ROUNDUP(MONTH(d) / 3, 0) & " " & YEAR(d)
+		lineageTag: 853bc30a-040a-4359-ab36-f600e7507c08
+
+	measure 'ROA Title' = "ROA by Bank, " & [Period Label]
+		lineageTag: 793c6d7a-ffe7-4f72-821f-97d136732c5d
+
+	measure 'CET1 Title' = "CET1 Capital Ratio by Bank, " & [Period Label]
+		lineageTag: 74e2dafd-1d33-42b0-9f25-688a93c87f35
+
+	measure 'Noncurrent Title' = "Noncurrent Loan Rate, " & [Period Label]
+		lineageTag: c61b1f20-09a9-4aaf-b200-1cf75799abd7
+
+	measure 'YoY Title' = "ROA Change vs. Prior Year, " & [Period Label]
+		lineageTag: 43edc0c6-9414-4437-bc6d-18b626daf5d2
+
+	measure 'Assets Title' = "Share of Peer Group Assets ($B), " & [Period Label]
+		lineageTag: c84d979a-519d-4742-aa69-ff5ee450f2af
+
+	column cert
+		dataType: int64
+		formatString: 0
+		lineageTag: 9b106b6f-ce4e-48cd-8e3f-48d2b05d9116
+		summarizeBy: sum
+		sourceColumn: cert
+
+		annotation SummarizationSetBy = Automatic
+
+	column namefull
+		dataType: string
+		lineageTag: e64153c2-d2b5-4637-a937-8f30fefdb605
+		summarizeBy: none
+		sourceColumn: namefull
+
+		annotation SummarizationSetBy = Automatic
+
+	column ticker
+		dataType: string
+		lineageTag: 4100ba35-f5dd-417e-a4a3-40f84bea1346
+		summarizeBy: none
+		sourceColumn: ticker
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b85a4970-6ac7-48c5-a047-973db7baf60d
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 8e38bca7-a06f-4195-ba2d-a007249d14b8
+			defaultHierarchy: LocalDateTable_805210bf-2863-4cd9-b50e-6b0fbd3e73ad.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ddea0dd-4bd8-4fcc-8312-b368dd4ec835
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d4ccaaa-e64c-40a2-8684-57e71468d7ce
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_assets
+		dataType: double
+		lineageTag: ad92ca21-b1f8-4ede-9ecf-98834e7086cb
+		summarizeBy: sum
+		sourceColumn: total_assets
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_interest_margin
+		dataType: double
+		lineageTag: ff09ad91-c6b6-4a7f-96cb-104c54645d57
+		summarizeBy: sum
+		sourceColumn: net_interest_margin
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column return_on_assets
+		dataType: double
+		lineageTag: faaca108-c4ed-49dc-bfed-3aa76e32a1e0
+		summarizeBy: sum
+		sourceColumn: return_on_assets
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column return_on_equity
+		dataType: double
+		lineageTag: 9b7cfb10-fdae-4013-8250-ce3ade572f9c
+		summarizeBy: sum
+		sourceColumn: return_on_equity
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column noncurrent_loan_rate
+		dataType: double
+		lineageTag: d6dea9c2-3bef-458c-953b-6212c219d546
+		summarizeBy: sum
+		sourceColumn: noncurrent_loan_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_charge_off_rate
+		dataType: double
+		lineageTag: 5cda66d5-be3b-4600-8b89-8d3bc7bdf2cb
+		summarizeBy: sum
+		sourceColumn: net_charge_off_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column provision_rate
+		dataType: double
+		lineageTag: 5ec337a2-16c5-4f7d-a93f-428637b42769
+		summarizeBy: sum
+		sourceColumn: provision_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column efficiency_ratio
+		dataType: double
+		lineageTag: 79d1e469-835c-465f-9569-253ec3a58b3b
+		summarizeBy: sum
+		sourceColumn: efficiency_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column noninterest_expense_rate
+		dataType: double
+		lineageTag: 8b69a49d-fcc4-417c-88ae-fc16e9052b2e
+		summarizeBy: sum
+		sourceColumn: noninterest_expense_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column noninterest_income_rate
+		dataType: double
+		lineageTag: 1b471b97-1daf-4409-8435-2a6a0f678a25
+		summarizeBy: sum
+		sourceColumn: noninterest_income_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column loans_to_deposits
+		dataType: double
+		lineageTag: 2a311c35-6d55-4164-a20a-88a238124ca8
+		summarizeBy: sum
+		sourceColumn: loans_to_deposits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cet1_capital_ratio
+		dataType: double
+		lineageTag: 86ce9e92-32ce-4b3a-be2a-8bab9b1a31ac
+		summarizeBy: sum
+		sourceColumn: cet1_capital_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column cost_of_funds
+		dataType: double
+		lineageTag: 5a5b6ae0-978b-45f3-a4af-9ccdc7e48b6c
+		summarizeBy: sum
+		sourceColumn: cost_of_funds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column roa_qoq
+		dataType: double
+		lineageTag: dcf1df03-6fee-453a-b10b-d9981237ad92
+		summarizeBy: sum
+		sourceColumn: roa_qoq
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column roa_yoy
+		dataType: double
+		lineageTag: 4ec25da1-33aa-4371-99de-db138d43fbac
+		summarizeBy: sum
+		sourceColumn: roa_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nim_qoq
+		dataType: double
+		lineageTag: d1b96f94-1514-4d2a-9336-7c112a00977a
+		summarizeBy: sum
+		sourceColumn: nim_qoq
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nim_yoy
+		dataType: double
+		lineageTag: c7c245b2-33ec-48ed-a77b-54d136c1b3ea
+		summarizeBy: sum
+		sourceColumn: nim_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column efficiency_yoy
+		dataType: double
+		lineageTag: 0b3de219-4e11-4c11-a1a8-57d7a657b496
+		summarizeBy: sum
+		sourceColumn: efficiency_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column noncurrent_yoy
+		dataType: double
+		lineageTag: e54d788f-c3c2-4c07-8c01-7e587a01c46b
+		summarizeBy: sum
+		sourceColumn: noncurrent_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_charge_off_yoy
+		dataType: double
+		lineageTag: bba4d587-916e-46b9-8de1-9710db026362
+		summarizeBy: sum
+		sourceColumn: net_charge_off_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column asset_growth_yoy
+		dataType: double
+		lineageTag: 86f440f8-589b-413e-abd4-ffa822a131e5
+		summarizeBy: sum
+		sourceColumn: asset_growth_yoy
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column peer_median_roa
+		dataType: double
+		lineageTag: a63376d9-f59e-46b9-bd53-235f308217d5
+		summarizeBy: sum
+		sourceColumn: peer_median_roa
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column peer_median_nim
+		dataType: double
+		lineageTag: 8935cb27-317c-4e64-adb5-e8f261a7c758
+		summarizeBy: sum
+		sourceColumn: peer_median_nim
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column peer_median_efficiency
+		dataType: double
+		lineageTag: 96ffed10-2636-4581-b523-0469d3ffda9b
+		summarizeBy: sum
+		sourceColumn: peer_median_efficiency
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column peer_median_noncurrent
+		dataType: double
+		lineageTag: bf239d3e-06e4-4187-8767-ab8761901c24
+		summarizeBy: sum
+		sourceColumn: peer_median_noncurrent
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column peer_median_net_charge_off
+		dataType: double
+		lineageTag: 782b0daa-241d-4da7-8b56-e5e4d41f1257
+		summarizeBy: sum
+		sourceColumn: peer_median_net_charge_off
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column roa_vs_peer
+		dataType: double
+		lineageTag: e82e2791-4a69-475e-b714-f005edbf41fd
+		summarizeBy: sum
+		sourceColumn: roa_vs_peer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column nim_vs_peer
+		dataType: double
+		lineageTag: 27aadc3d-7a11-4ac3-9f61-0f65ea9654c6
+		summarizeBy: sum
+		sourceColumn: nim_vs_peer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column efficiency_vs_peer
+		dataType: double
+		lineageTag: 1b1aaa79-4ceb-4a57-af87-c870f104dfdf
+		summarizeBy: sum
+		sourceColumn: efficiency_vs_peer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column noncurrent_vs_peer
+		dataType: double
+		lineageTag: 814d50b7-5072-45bd-abe2-ba19d740732b
+		summarizeBy: sum
+		sourceColumn: noncurrent_vs_peer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column net_charge_off_vs_peer
+		dataType: double
+		lineageTag: 313cf036-5b30-4904-83a9-f4a54c8fff25
+		summarizeBy: sum
+		sourceColumn: net_charge_off_vs_peer
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'public v_bank_financials' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("ep-soft-bar-b4qzbrup-pooler.c-6.us-east-2.aws.neon.tech", "neondb"),
+				    public_v_bank_financials = Source{[Schema="public", Item="v_bank_financials"]}[Data]
+				in
+				    public_v_bank_financials
+
+	annotation PBI_ResultType = Exception
+
+	annotation PBI_NavigationStepName = Navigation
+

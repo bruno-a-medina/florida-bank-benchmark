@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "23259774b2779689343c",
+  "position": {
+    "x": 1502.9109341057206,
+    "y": 232.17958001448227,
+    "z": 11000,
+    "height": 219.66690803765388,
+    "width": 379.55104996379436,
+    "tabOrder": 11000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Key Findings:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": " Capital City, U.S. Century and SouthState lead peer ROA at 1.4% to 1.5%. Seacoast sits just below the peer median of about 1.28%, while Amerant and BankUnited trail near 0.9% and also carry the highest noncurrent loan rates.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

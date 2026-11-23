@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "920e06a616b1247f7236",
+  "position": {
+    "x": 1006.5749456915279,
+    "y": 164.05503258508327,
+    "z": 7000,
+    "height": 88.979000724112964,
+    "width": 816.10427226647357,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Key Findings:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  },
+                  {
+                    "value": " Credit stress is concentrated at Amerant and BankUnited, with the highest noncurrent loan rates at 2.5% and 1.7%. All six banks hold CET1 above 12%, so the gap is in asset quality and earnings, not capital.",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
